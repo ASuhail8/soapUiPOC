@@ -2,6 +2,7 @@ package sampleTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -75,7 +76,15 @@ public class XmlProcessing {
     public static WebDriver driver;
 
     public static String launchGoogle() throws InterruptedException {
-        driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--disable-extensions");
+        chromeOptions.addArguments("--disable-gpu");
+        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("--incognito");
+        chromeOptions.addArguments("--disable-application-cache");
+        driver = new ChromeDriver(chromeOptions);
         driver.get("https://www.google.com");
         Thread.sleep(2000);
         driver.quit();
