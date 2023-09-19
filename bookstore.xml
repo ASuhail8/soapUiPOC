@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><bookstore>
+  <book>
+    <title>Java Programming</title>
+    <author>John Doe</author>
+    <price>55.99</price>
+    <Access>ya29.A0ARrdaM9t9aljiD0iEA2PhEk67gBTa7NTmcBm2EQxNytzXH_R99RIhfCe9qnn7oeRZd2UzOwIKfNYQNjeMJn1PTttnZxPbyCgReh9gRwVCekDNFov9EItb9MsKL4Evqvi5KrPFmN5VWXGHD9Jm-UMeJAYdC-o</Access>
+  </book>
+  <book>
+    <title>Web Development Basics</title>
+    <author>Jane Smith</author>
+    <price>24.99</price>
+  </book>
+  <book>
+    <title>Database Design</title>
+    <author>Michael Johnson</author>
+    <price>34.50</price>
+  </book>
+</bookstore>
